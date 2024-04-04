@@ -1,9 +1,7 @@
-let contentElement = document.querySelector(".content");
 let nextElementBtn = document.querySelector(".next");
 let prevElementBtn = document.querySelector(".prev");
 let pointElementBtns = document.querySelectorAll(".test-question__option");
 let blockElementBtns = [...document.querySelectorAll(".test-questions")];
-let activeBlockElement = document.querySelector(".test-questions.active");
 let resultsBtnElement = document.querySelector(".btn-result");
 let resultsBlockElement = document.querySelector(".results");
 
@@ -60,29 +58,23 @@ pointElementBtns.forEach((pointBtn) => {
     pointBtn.classList.add("active");
     const active = document.querySelector(".test-questions.active");
     // Check on every steps
-    if (
-      active.querySelectorAll(".test-question__option.active").length == "4"
-    ) {
+    if (active.querySelectorAll(".test-question__option.active").length == "4") {
       nextElementBtn.classList.remove("inactive");
     }
     // Check on last step
-    if (
-      active.querySelectorAll(".test-question__option.active").length == "4" &&
-      blockElementBtns.indexOf(active) == 9
-    ) {
+    if (active.querySelectorAll(".test-question__option.active").length == "4" &&
+      blockElementBtns.indexOf(active) == 9) {
       resultsBtnElement.style.display = "block";
       nextElementBtn.classList.add("inactive");
     }
   });
 });
 
-// --------Sumbit Form
-function handleGetResults(e) {
-  e.preventDefault();
+// --------Sumbit Results
+function handleGetResults() {
   const data = [];
   let id = window.location.search
   // data.push({name: 'lead_id', value: `${id.slice(4, attr.length)}`})
-  data.push({name: 'lead_id', value: `123456789`})
   const elements = document.querySelectorAll(".test-question__options");
   elements.forEach((element) => {
     const name = element.dataset.name;
@@ -92,8 +84,8 @@ function handleGetResults(e) {
       value: value,
     });
   });
-  
-  // Convert the array of objects to a single object using reduce()
+  data.push({name: 'lead_id', value: `123456789`})
+ 
   const formData = data.reduce((obj, item) => {
     obj[item.name] = item.value;
     return obj;
@@ -111,7 +103,7 @@ function handleGetResults(e) {
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
-    return response.json(); // Преобразуем ответ в JSON
+    return response.json();
   })
   .then(data => {
     resultsBlockElement.innerHTML = `
