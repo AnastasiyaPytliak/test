@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PAEI Test</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="test-container">
+      <h3 class="header">PAEI Test</h3>
+      <div class="content">
+        <p>Перед вами 10 блоков, содержащие по 4 качества личности...</p>
+        <!-- Пример вопроса -->
+        <div class="test-questions active" data-block="1">
+          <div class="test-question">
+            <div class="test-question__title">Вовлеченный</div>
+            <div class="test-question__options" data-name="1.1">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="1">2</span>
+              <span class="test-question__option" data-points="1">3</span>
+              <span class="test-question__option" data-points="1">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Отзывчивый</div>
+            <div class="test-question__options" data-name="1.2">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Яркий</div>
+            <div class="test-question__options" data-name="1.3">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Сомневающийся</div>
+            <div class="test-question__options" data-name="1.4">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+        </div>
+        <div class="test-questions" data-block="2">
+          <div class="test-question">
+            <div class="test-question__title">Анализирующий</div>
+            <div class="test-question__options" data-name="2.1">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Прямой</div>
+            <div class="test-question__options" data-name="2.2">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Чувствующий</div>
+            <div class="test-question__options" data-name="2.3">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Харизматичный</div>
+            <div class="test-question__options" data-name="2.4">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+        </div>
+        <div class="test-questions" data-block="3">
+          <div class="test-question">
+            <div class="test-question__title">Созерцающий</div>
+            <div class="test-question__options" data-name="3.1">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Делающий</div>
+            <div class="test-question__options" data-name="3.2">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Сопереживающий</div>
+            <div class="test-question__options" data-name="3.3">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Думающий</div>
+            <div class="test-question__options" data-name="3.4">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+        </div>
+        <div class="test-questions" data-block="4">
+          <div class="test-question">
+            <div class="test-question__title">Отдающий себе отчет</div>
+            <div class="test-question__options" data-name="4.1">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Идущий на риск</div>
+            <div class="test-question__options" data-name="4.2">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Оценивающий</div>
+            <div class="test-question__options" data-name="4.3">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Благожелательный</div>
+            <div class="test-question__options" data-name="4.4">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+        </div>
+        <div class="test-questions" data-block="5">
+          <div class="test-question">
+            <div class="test-question__title">Задающий вопросы</div>
+            <div class="test-question__options" data-name="5.1">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Логичный</div>
+            <div class="test-question__options" data-name="5.2">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Эффективный</div>
+            <div class="test-question__options" data-name="5.3">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Интуитивный</div>
+            <div class="test-question__options" data-name="5.4">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+        </div>
+        <div class="test-questions" data-block="6">
+          <div class="test-question">
+            <div class="test-question__title">Абстрактный</div>
+            <div class="test-question__options" data-name="6.1">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Наблюдающий</div>
+            <div class="test-question__options" data-name="6.2">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Активный</div>
+            <div class="test-question__options" data-name="6.3">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Взаимодействующий</div>
+            <div class="test-question__options" data-name="6.4">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+        </div>
+        <div class="test-questions" data-block="7">
+          <div class="test-question">
+            <div class="test-question__title">Размышляющий</div>
+            <div class="test-question__options" data-name="7.1">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Прагматичный</div>
+            <div class="test-question__options" data-name="7.2">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Теплый</div>
+            <div class="test-question__options" data-name="7.3">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Ориентированный на будущее</div>
+            <div class="test-question__options" data-name="7.4">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+        </div>
+        <div class="test-questions" data-block="8">
+          <div class="test-question">
+            <div class="test-question__title">Наблюдающий</div>
+            <div class="test-question__options" data-name="8.1">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Побеждающий</div>
+            <div class="test-question__options" data-name="8.2">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Стремящийся к консенсусу</div>
+            <div class="test-question__options" data-name="8.3">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Концептуальный</div>
+            <div class="test-question__options" data-name="8.4">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+        </div>
+        <div class="test-questions" data-block="9">
+          <div class="test-question">
+            <div class="test-question__title">Осведомленный</div>
+            <div class="test-question__options" data-name="9.1">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Сдержанный</div>
+            <div class="test-question__options" data-name="9.2">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Генерирующий идеи</div>
+            <div class="test-question__options" data-name="9.3">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Рациональный</div>
+            <div class="test-question__options" data-name="9.4">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+        </div>
+        <div class="test-questions" data-block="10">
+          <div class="test-question">
+            <div class="test-question__title">Яркий, выделяющийся</div>
+            <div class="test-question__options" data-name="10.1">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Приятный</div>
+            <div class="test-question__options" data-name="10.2">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Деловой, серьезный</div>
+            <div class="test-question__options" data-name="10.3">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+          <div class="test-question">
+            <div class="test-question__title">Аккуратный, точный</div>
+            <div class="test-question__options" data-name="10.4">
+              <span class="test-question__option" data-points="1">1</span>
+              <span class="test-question__option" data-points="2">2</span>
+              <span class="test-question__option" data-points="3">3</span>
+              <span class="test-question__option" data-points="4">4</span>
+            </div>
+          </div>
+        </div>
+        <div class="switch">
+          <div class="btn prev inactive">Назад</div>
+          <div class="btn next inactive">Далее</div>
+        </div>
+        <div class="btn btn-result">Узнать результаты</div>
+        <div class="results"></div>
+        <!-- Повторять блоки вопросов по необходимости -->
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(to right, #feba2d, #fc2e60);
+  color: white;
+  padding: 20px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.test-container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+h3 {
+  font-family: "Prosto One", cursive;
+}
+.test-questions {
+  margin: 32px 0;
+  display: none;
+}
+.test-questions.active {
+  display: block;
+}
+.test-question {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.test-question__title {
+  font-weight: 700;
+  margin-right: 20px;
+  width: 190px;
+}
+.test-question__options {
+  display: flex;
+}
+.test-question__option {
+  background: white;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-flex;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  transition: all 0.4s ease-in-out;
+}
+.test-question__option:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.test-question__option.active {
+  background: #626262;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid #fff;
+}
+.switch {
+  display: flex;
+  gap: 32px;
+}
+.btn {
+  padding: 10px 12px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btn:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.inactive {
+  background-color: transparent;
+  color: #333;
+  cursor: default;
+  pointer-events: none;
+}
+.btn-result {
+  padding: 10px 12px;
+  margin: 32px 0 16px;
+  border: 1px dashed #fff;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  display: none;
+}
+.btn-result:hover {
+  box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+}
+.btn-result:active {
+  box-shadow: rgba(177, 177, 180, 0.25) 0px 30px 60px -12px inset,
+  rgba(255, 253, 253, 0.3) 0px 18px 36px -18px inset;
+}
+.results__title {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  margin: 16px 0;
+}
+.results__info {
+  max-width: 600px;
+  padding: 0 16px;
+}
